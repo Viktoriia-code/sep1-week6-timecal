@@ -1,9 +1,9 @@
 pipeline {
   agent any
     stages {
-      stage ("checking")(
+      stage ("checking"){
         steps {
-          gir branch: "main", url: "https://github.com/Viktoriia-code/sep1-week6-timecal.git"
+          git branch: "main", url: "https://github.com/Viktoriia-code/sep1-week6-timecal.git"
         }
       }
 
